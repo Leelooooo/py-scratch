@@ -3,11 +3,11 @@ import conf_dev
 import conf_test
 import platform
 
-
 # configure Multi-confronment
+# 判断当前系统，并引入相应的配置文件
 platform_os = platform.system()
 config = conf_dev
-if (platform_os == 'Linux'):
+if platform_os == 'Linux':
     config = conf_test
 # path
 data_root_path = config.data_root_path

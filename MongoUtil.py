@@ -9,7 +9,7 @@ import conf_test
 # configure Multi-confronment
 platform_os = platform.system()
 config = conf_dev
-if (platform_os == 'Linux'):
+if platform_os == 'Linux':
     config = conf_test
 # mongodb
 uri = 'mongodb://' + config.user + ':' + config.pwd + '@' + config.server + ':' + config.port + '/' + config.db_name
